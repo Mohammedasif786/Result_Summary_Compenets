@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Frontend Mentor | Results summary component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="grid place-content-center h-screen w-full bg-[#ecf2ff]">
+    <main
+      class="w-96 overflow-hidden shadow-2xl bg-white rounded-xl md:w-full md:flex"
+    >
+      <!--First Part starts here!-->
+      <div
+        class="border-2 md:h-dvh md:w-96 md:max-h-[63dvh] text-white flex-col bg-linear-to-b from-[#6341fd] to-[#342eea] text-center max-w-sm rounded-b-4xl md:rounded-2xl py-8 space-y-4 md:space-y-8"
+      >
+        <h1 class="text-2xl font-semibold text-gray-300">Your Results</h1>
+        <div class="flex justify-center">
+          <div
+            id="Circle"
+            class="flex-col bg-linear-to-b from-[#4317d4] to-[#4734ef] text-center rounded-[50%] px-8 py-6 justify-center items-center"
+          >
+            <h1 class="text-6xl font-bold text-white">76</h1>
+            <p class="text-xl font-medium text-gray-400">of 100</p>
+          </div>
+        </div>
+        <h1 class="text-3xl font-bold">Great</h1>
+        <div class="flex justify-center">
+          <p class="text-justify font-semibold">
+            You scored higher than 65% of the <br />
+            people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <!--First Part Ends here!-->
+
+      <!--Summary Starts here!-->
+      <div class="md:flex-col">
+        <div class="p-4 md:p-8">
+          <h1 class="leading-9 font-semibold py-2 text-xl">Summary</h1>
+          <div class="space-y-4" id="4-itemsParts">
+            <div
+              class="flex justify-between md:w-sm bg-[#fcd7dc] p-4 mx-4 rounded-xl"
+            >
+              <div class="flex space-x-3">
+                <img src="../assets/images/icon-reaction.svg" alt="Reaction" />
+                <h1>Reaction</h1>
+              </div>
+              <p>80/100</p>
+            </div>
+
+            <div class="flex justify-between bg-[#fae3c6] p-4 mx-4 rounded-xl">
+              <div class="flex space-x-3">
+                <img src="../assets/images/icon-memory.svg" alt="" />
+                <h1>Memory</h1>
+              </div>
+              <p>92/100</p>
+            </div>
+            <div class="flex justify-between bg-[#baf3de] p-4 mx-4 rounded-xl">
+              <div class="flex space-x-3">
+                <img src="../assets/images/icon-verbal.svg" alt="" />
+                <h1>Verbal</h1>
+              </div>
+              <p>61/100</p>
+            </div>
+            <div class="flex justify-between bg-[#c4c4fb] p-4 mx-4 rounded-xl">
+              <div class="flex space-x-3">
+                <img src="../assets/images/icon-visual.svg" alt="" />
+                <h1>Visual</h1>
+              </div>
+              <p>73/100</p>
+            </div>
+          </div>
+        </div>
+        <!--Summary End here!-->
+
+        <footer class="flex justify-center my-4">
+          <div
+            class="place-self-center bg-[#303b59] rounded-4xl cursor-pointer"
+          >
+            <button class="text-center text-xl p-4 w-52 font-bold text-white">
+              Continue
+            </button>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Md Asif</a>.
+    </div>
+  </body>
+</html>
